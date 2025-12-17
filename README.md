@@ -259,19 +259,6 @@ python -m src.gui.ant_tracker_gui
 
 4. **Click "Start Tracking"** and wait for completion
 
-### Command Line Method
-
-For basic tracking:
-```bash
-python -m src.tracking.track_enhanced \
-    --model models/trained/best.pt \
-    --source your_video.mp4 \
-    --conf 0.25 \
-    --tracker botsort
-```
-
-Results saved to `outputs/tracking/`
-
 ---
 
 ## Understanding Your Results
