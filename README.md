@@ -500,6 +500,9 @@ ant-tracker/
 ├── ADVANCED.md                 # Advanced configurations
 ├── training_detector.pdf       # Doc that details how to re-train detector
 │
+├── config/
+│   └── dataset.YAML            # YAML config file for training
+│
 ├── src/
 │   ├── gui/                    # Graphical interface
 │   ├── tracking/               # Video tracking code
@@ -510,8 +513,6 @@ ant-tracker/
 │   ├── pretrained/             # Base models
 │   └── trained/
 │       └── best.pt             # Default model (use this)
-│
-├── test_videos/                # folder that can be used to store test videos
 │
 ├── utils/                      # Utility scripts
 │   ├── split_video.py          # Split long videos
