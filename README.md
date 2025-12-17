@@ -316,7 +316,7 @@ python utils/extract_frames.py --video your_video.mp4 --output dataset/images --
 
 **Split into train/val/test:**
 ```bash
-python -m src.training.prepare_dataset --source dataset --output dataset_split
+python -m src.training.prepare_dataset --source unprepared_dataset --output dataset
 ```
 
 ### Step 2: Train Model
