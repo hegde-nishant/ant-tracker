@@ -304,17 +304,23 @@ The included model works for many ant species, but you'll need to train your own
 ### Step 1: Create Dataset
 
 **Extract frames from your videos:**
+
+The detector (Yolo) is trained on frames, hence we have to extract frames that we can label from our videos.
+
 ```bash
 python utils/extract_frames.py --video your_video.mp4 --output dataset/images --interval 30
 ```
 
 **Annotate frames:**
-1. Go to [labelstud.io](https://labelstud.io) and install Label Studio
+1. Go to [labelstud.io](https://labelstud.io) and install Label Studio (scope of how to work with Label Studio is out of scope, please refer Label Studio documentation)
 2. Upload your extracted frames
 3. Draw bounding boxes around each ant
 4. Export in YOLO OBB format
 
 **Split into train/val/test:**
+
+We need to split our annotated data into different folders, train - model sees and learns from this data, val - model is evaluated on this data during training and refined if performance is poor, test - unseen data we can test the model on to check it's performance.
+
 ```bash
 python -m src.training.prepare_dataset --source unprepared_dataset --output dataset
 ```
@@ -477,16 +483,6 @@ Calculate ant counts for specific time period:
 2. Set start and end times (in seconds)
 
 Results show average/min/max ant counts
-
-### More Advanced Features
-
-See [ADVANCED.md](ADVANCED.md) for:
-- Multi-GPU training
-- HPC/cluster deployment
-- Custom training configurations
-- Model export to different formats
-- Batch processing multiple videos
-- Performance optimization
 
 ---
 
