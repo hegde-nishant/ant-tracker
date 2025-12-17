@@ -2,13 +2,6 @@
 # Use this if you don't have an NVIDIA graphics card or want to use CPU processing
 # Note: CPU processing is slower but works on all computers
 #
-# Installation Steps:
-# 1. Install PyTorch CPU version first:
-#    pip install torch torchvision --index-url https://download.pytorch.org/whl/cpu
-#
-# 2. Then install these packages:
-#    pip install -r requirements-cpu.txt
-#
 # Expected processing speed:
 #   - 10-minute video may take 30-60 minutes to process on CPU
 #   - Training a model may take several hours
