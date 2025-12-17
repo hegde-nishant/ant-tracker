@@ -432,6 +432,8 @@ Not: `python src/gui/ant_tracker_gui.py`
 
 ## Using Utility Scripts
 
+These can be used to split a big video into smaller chunks to perform tracking on or extract frames for training a detector from a whole video or it's chunks.
+
 ### Split Long Videos
 
 Split a long video into smaller chunks for annotation:
