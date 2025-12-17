@@ -301,6 +301,12 @@ The included model works for many ant species, but you'll need to train your own
 - Very different camera setup
 - Need higher accuracy for your specific videos
 
+For more details, refer training_detector.pdf.
+
+To train the detector on CIRC's Bluehive, please refer instructions on how to use/setup bluehive - https://www.sas.rochester.edu/psc/assets/pdf/bluehivetutorial.pdf
+
+For details about compute nodes on Bluehive refer - https://www.circ.rochester.edu/resources
+
 ### Step 1: Create Dataset
 
 **Extract frames from your videos:**
@@ -492,6 +498,7 @@ Results show average/min/max ant counts
 ant-tracker/
 ├── README.md                   # This file - start here
 ├── ADVANCED.md                 # Advanced configurations
+├── training_detector.pdf       # Doc that details how to re-train detector
 │
 ├── src/
 │   ├── gui/                    # Graphical interface
