@@ -29,6 +29,3 @@ ffmpeg-python>=0.2.0       # Video encoding/decoding (requires ffmpeg installed)
 PyYAML>=6.0                # YAML configuration files
 psutil>=5.9.0              # System monitoring
 tensorboard>=2.13.0        # Training visualization (optional)
-
-# Note: PyTorch and torchvision should be installed separately using the command above
-# This ensures you get the CPU-only version which is smaller and faster to download
